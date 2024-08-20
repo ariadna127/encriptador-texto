@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de mensajes</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <main>
+        <div class="mensaje-entrada">
+            <h1 class="logo"></h1>
+            <div class="entrada">
+                <textarea class="encriptar" name="" id="" placeholder="Ingrese el texto aqui"></textarea>
+                <div class="p-img">
+                    <img src="./assets/bi_exclamation-circle-fill.png" alt="">
+                    <p id="texto-advertencia">Solo letras minúsculas y sin acentos</p>
+                </div>
+                <div class="botones">
+                    <button id="encriptar-btn" class="encriptar-btn">Encriptar</button>
+                    <button id="btn-desencriptar" class="desencriptar-btn">Desencriptar</button>
+                </div>
+            </div>
+        </div>
+        <div id="div-mensaje-salida" class="mensaje-salida">
+            <img id="img-salida" class="img-salida" src="./assets/Muñeco.png" alt="">
+            <div class="div-salida" >
+                <h2 id="h2-salida" class="h2-salida">Ningún mensaje fue encontrado</h2>
+                <p id="p-salida" class="p-salida">Ingresá el texto que deseas encriptar o desencriptar.</p>
+            </div>
+            <button id="btn-copiar" class="btn-copiar disabled">Copiar</button>
+            </div>
+        </div>
+    </main>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>
