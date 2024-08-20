@@ -220,5 +220,6 @@ main{
 
     .entrada textarea{
         font-size: 1.5625rem;
+        height: 60vh;
     }
 }
